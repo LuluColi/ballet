@@ -10,7 +10,7 @@ const PUBLIC_DIR = path.resolve(ROOT_PATH, 'build/**/*');
 
 gulp.task('deploy:prod', () => (
   gulp.src(PUBLIC_DIR).pipe(ghPages({
-    remoteUrl: 'ssh://git@github.com/initiumsp/chanel_feature_20161121.git',
+    remoteUrl: 'ssh://git@github.com/LuluColi/ballet.git',
   }))
 ));
 

@@ -1,0 +1,28 @@
+{
+  "name": "chanel_feature",
+  "version": "0.1.0",
+  "homepage": "./",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-rsync": "0.0.6",
+    "react-media": "^1.3.2",
+    "react-scripts": "0.7.0",
+    "react-spark-scroll": "^3.0.0",
+    "react-spark-scroll-gsap": "^3.0.0",
+    "react-spark-scroll-rekapi": "^3.0.0",
+    "rekapi": "^1.7.3",
+    "underscore": "^1.8.3"
+  },
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

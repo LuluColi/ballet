@@ -102,8 +102,8 @@ export default class App extends Component {
                     className="decoration"
                     proxy="pin-cont"
                     timeline={{
-                      'topTop': { transform: "translateY(10%) translateX(-300%) scale(1,1)", opacity: 1},
-                      'bottomTop': { transform: "translateY(10%) translateX(200%) scale(2,2)", opacity: 0}
+                      'topTop': { transform: "translateY(10%) translateX(-300%) scale(0.5,1)", opacity: 1},
+                      'bottomTop': { transform: "translateY(10%) translateX(150%) scale(2,2)", opacity: 0}
                     }} >
                     <img className="clock" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/dancer.png" alt="dancer" />
                   </SparkScroll.div>

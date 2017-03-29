@@ -67,6 +67,10 @@ export default class App extends Component {
               )}
             </Media>
           </SparkScroll.div>
+          <div className="pcshare">
+            <a id="fbshare" href="https://www.facebook.com/sharer.php?s=100&u=https://initium.style/s/20170331-ballet/" onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=no,height=368,width=600'); return false;" title="分享到 facebook" class="facebook">
+            <img className="desktop" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170324/share_facebook.svg"/></a>
+          </div>
           <div className="container"> 
             <div className="content">
               <Media query={MOBILE}>
@@ -98,19 +102,19 @@ export default class App extends Component {
                     className="decoration"
                     proxy="pin-cont"
                     timeline={{
-                      'topTop': { transform: "translateY(-50%) translateX(-400%) scale(1,1)", opacity: 1},
-                      'bottomTop': { transform: "translateY(-50%) translateX(400%) scale(2,2)", opacity: .1}
+                      'topTop': { transform: "translateY(10%) translateX(-300%) scale(1,1)", opacity: 1},
+                      'bottomTop': { transform: "translateY(10%) translateX(200%) scale(2,2)", opacity: 0}
                     }} >
-                    <img className="clock" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/dancer.png" alt="clock" />
+                    <img className="clock" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/dancer.png" alt="dancer" />
                   </SparkScroll.div>
                 : <SparkScroll.div
                     className="decoration"
                     proxy="pin-cont"
                     timeline={{
                       'topTop': { transform: "translateY(50%) translateX(-600%) scale(1,1)", opacity: 1},
-                      'bottomTop': { transform: "translateY(50%) translateX(600%) scale(2,2)", opacity: .1}
+                      'bottomTop': { transform: "translateY(50%) translateX(600%) scale(2,2)", opacity: 0}
                     }} >
-                    <img className="clock" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/dancer.png" alt="clock" />
+                    <img className="clock" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/dancer.png" alt="dancer" />
                   </SparkScroll.div>
             )}
           </Media>

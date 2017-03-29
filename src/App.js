@@ -98,8 +98,8 @@ export default class App extends Component {
                     className="decoration"
                     proxy="pin-cont"
                     timeline={{
-                      'topTop': { transform: "translateY(-50%) translateX(-50%)"},
-                      'bottomTop': { transform: "translateY(-50%) translateX(-50%)"}
+                      'topTop': { transform: "translateY(-50%) translateX(-400%) scale(1,1)", opacity: 1},
+                      'bottomTop': { transform: "translateY(-50%) translateX(400%) scale(2,2)", opacity: .1}
                     }} >
                     <img className="clock" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/dancer.png" alt="clock" />
                   </SparkScroll.div>
@@ -107,8 +107,8 @@ export default class App extends Component {
                     className="decoration"
                     proxy="pin-cont"
                     timeline={{
-                      'topTop': { transform: "translateY(50%) translateX(-100%)"},
-                      'bottomTop': { transform: "translateY(50%) translateX(-100%))"}
+                      'topTop': { transform: "translateY(50%) translateX(-600%) scale(1,1)", opacity: 1},
+                      'bottomTop': { transform: "translateY(50%) translateX(600%) scale(2,2)", opacity: .1}
                     }} >
                     <img className="clock" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/dancer.png" alt="clock" />
                   </SparkScroll.div>

@@ -28,19 +28,19 @@ export default class App extends Component {
       backgroundPosition: `50% 0px`
     }
     const styleBg1={
-      backgroundImage: `url("https://initium-style.s3.amazonaws.com/StylishFeature/20161126/image1.jpg")`,
+      backgroundImage: `url("https://initium-style.s3.amazonaws.com/StylishFeature/20170331/image1.jpg")`,
       backgroundPosition: `50% 0px`
     }
     const styleBg2={
-      backgroundImage: `url("https://initium-style.s3.amazonaws.com/StylishFeature/20161126/image2.jpg")`,
+      backgroundImage: `url("https://initium-style.s3.amazonaws.com/StylishFeature/20170331/image2.jpg")`,
       backgroundPosition: `50% 0px`
     }
     const styleBg3={
-      backgroundImage: `url("https://initium-style.s3.amazonaws.com/StylishFeature/20161126/image3.jpg")`,
+      backgroundImage: `url("https://initium-style.s3.amazonaws.com/StylishFeature/20170331/image3.jpg")`,
       backgroundPosition: `50% 0px`
     }
     const styleBg4={
-      backgroundImage: `url("https://initium-style.s3.amazonaws.com/StylishFeature/20161126/image4.jpg")`,
+      backgroundImage: `url("https://initium-style.s3.amazonaws.com/StylishFeature/20170331/image4.jpg")`,
       backgroundPosition: `50% 0px`
     }
     const titleOpacity={
@@ -62,9 +62,8 @@ export default class App extends Component {
             <Media query={MOBILE}>
               {matches => (
                 matches
-                  ? <img className="home-video" src="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/mobile.jpg" />
-                  : <video className="home-video" src="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/chanel_j12.mp4" poster="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/poster.jpg" autoPlay loop >
-                    </video>
+                  ? <img className="home-video" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/mobile.jpg" />
+                  : <img className="home-video" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/cover.jpg" />
               )}
             </Media>
           </SparkScroll.div>
@@ -74,7 +73,7 @@ export default class App extends Component {
                 {matches => (
                   matches
                     ? <div className="home-text">
-                        <img className="" src="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/main_title.svg" alt="時間旅程" />
+                        <img className="" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/main_title.svg" alt="藝術的語言" />
                       </div>
                     : <SparkScroll.div
                           className="home-text"
@@ -84,7 +83,7 @@ export default class App extends Component {
                             'topTop': { opacity: 0},
                             'topTop+1': { opacity: 1 }
                           }} >
-                        <img className="" src="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/main_title.svg" alt="時間旅程" />
+                        <img className="" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/main_title.svg" alt="藝術的語言" />
                       </SparkScroll.div>
                 )}
               </Media>
@@ -99,75 +98,78 @@ export default class App extends Component {
                     className="decoration"
                     proxy="pin-cont"
                     timeline={{
-                      'topTop': { transform: "translateY(-50%) translateX(-50%) rotateZ(0deg)"},
-                      'bottomTop': { transform: "translateY(-50%) translateX(-50%) rotateZ(180deg)"}
+                      'topTop': { transform: "translateY(-50%) translateX(-50%)"},
+                      'bottomTop': { transform: "translateY(-50%) translateX(-50%)"}
                     }} >
-                    <img className="clock" src="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/clock.svg" alt="clock" />
+                    <img className="clock" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/dancer.png" alt="clock" />
                   </SparkScroll.div>
                 : <SparkScroll.div
                     className="decoration"
                     proxy="pin-cont"
                     timeline={{
-                      'topTop': { transform: "translateY(50%) translateX(-50%) rotateZ(0deg)"},
-                      'bottomTop': { transform: "translateY(50%) translateX(-50%) rotateZ(180deg)"}
+                      'topTop': { transform: "translateY(50%) translateX(-100%)"},
+                      'bottomTop': { transform: "translateY(50%) translateX(-100%))"}
                     }} >
-                    <img className="clock" src="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/clock.svg" alt="clock" />
+                    <img className="clock" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/dancer.png" alt="clock" />
                   </SparkScroll.div>
             )}
           </Media>
-
-        <section className="page no-margin" id="home">
-          <Media query={MOBILE}>
+        <section className="page dark">
+          <div className="container">
+            <div className="content">
+              <div className="container relative">
+                <div className="text">
+                  <img className="" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/title1.svg" alt="藝術的語言" />
+                </div>
+                <div className="text white">
+                <p>藝術的多元好比不同國家的語言，以不同形式、姿勢、時間軸進行。當我們平常所用的語言不足以表達內心最深處的訴求，藝術可能是一個出路；這個故事，是私密的，是脆弱的；但同時，藝術家的訴求也可能是大家心中所渴望的，一個苟且喘息的空間，一個被看見的機會。</p>
+                </div> 
+              </div> 
+            </div>
+          </div>
+        </section>
+        <Media query={MOBILE}>
             {matches => (
               matches
-                ? <video className="home-video-mobile" src="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/chanel_j12.mp4" poster="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/poster.jpg" controls >
-                  </video>
-                : <div>
+                ? <div className="cover_mobile">
+                    <img className="mobile_bg" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/mobilebg1.jpg" alt="藝術的語言" />
+                    <img className="mobile_bg" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/mobilebg2.jpg" alt="藝術的語言" />
                   </div>
-            )}
-          </Media>
-        </section>
-
+                : <section className="cover" id="bg1" style={styleBg1} >
+                  </section>
+          )}
+        </Media>
         <section className="page dark">
           <div className="container">
             <div className="content">
               <div className="container relative">
                 <div className="text">
-                  <img className="" src="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/title1.svg" alt="快慢之間" />
+                  <img className="" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/title2.svg" alt="真正感受" />
                 </div>
                 <div className="text white">
-                <p>時間是我們定義生活質素的重要元素。當我們覺得時間過得很快，大多數代表我們過得開心，相反，當我們覺得時間過得很慢，便準和自己身處的場所和在做的事情有點沉悶有關。</p>
-                <p>這樣比較，卻並不是說快肯定好過慢，有時時間過得太快的話，又會有種走馬看花甚麼印象都留不下的感嘆。正如現在大家每天都會定時定候上社交媒體刷屏，拇指不斷在屏幕上舞動，希望儘快看完更新了的訊息，不然和朋友同事間便沒有話題，但到底看過了甚麼訊息，那些訊息具體在講甚麼的，卻可能不甚了了。因為我們知道，萬一大家有興趣看看發生甚麼事情時，總會有條link可以share出來的吧！？</p>
+                <p>建築彷如永恆的代表，不容易被消滅；但就正因為它永遠都在，我們有否給它們被看見的機會？這次就找來一位年輕芭蕾舞者，來一場與城市建築的對談。一位舞者，走到街上，想要尋找想看見的，也同時在尋求被看見，是與慾望、與被遺忘、與高不可攀的一場對談。</p> 
                 </div> 
               </div> 
             </div>
           </div>
         </section>
-        <section className="cover" id="bg1" style={styleBg1} >
-        </section>
+        <Media query={MOBILE}>
+            {matches => (
+              matches
+                ? <div className="cover_mobile">
+                    <img className="mobile_bg" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/mobilebg3.jpg" alt="藝術的語言" />
+                    <img className="mobile_bg" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/mobilebg4.jpg" alt="藝術的語言" />
+                  </div>
+                : <section className="cover" id="bg2" style={styleBg2} >
+                  </section>
+          )}
+        </Media>
         <section className="page dark">
           <div className="container">
             <div className="content">
               <div className="container relative">
                 <div className="text">
-                  <img className="" src="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/title2.svg" alt="真正感受" />
-                </div>
-                <div className="text white">
-                <p>如此，便讓我更珍惜一些可以真正感受到時間在流轉的事情。放一張黑膠唱片，看着音樂慢慢轉揚出來。看一次輪盤轉動轉出下一剎的未來。雙手按着陶泥讓陶窯轉成心中所想。踏着單車享受時間飛往身後的快感。戴上拳繩練習一下揮拳之間的速度。倒一杯威士忌，看酒波流動間泛起的香氣。耳聽喇叭震盪着時間的節奏。感受結他和鉉震動出和諧。嘗試明白陀螺自轉的時間維度。感應彈珠彈跳彈指之間。</p>
-                <p>是的，生活裏實在有太多瞬間，值得我們好好把握和珍惜，細意感受和品嚐。如果你有這樣的用心和主動的話，便會發現，時間不光是定義生活質素的元素，它更可以是生活魅力的一種源泉。</p>
-                </div> 
-              </div> 
-            </div>
-          </div>
-        </section>
-        <section className="cover" id="bg2" style={styleBg2} >
-        </section>
-        <section className="page dark">
-          <div className="container">
-            <div className="content">
-              <div className="container relative">
-                <div className="text">
-                  <img className="" src="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/title3.svg" alt="時尚製錶" />
+                  <img className="" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/title3.svg" alt="時尚製錶" />
                 </div>
                 <div className="text white">
                 <p>誠如CHANEL於踏入21世紀的瞬間推出了空前全新的J12時計系列，透過現代感的造型設計，大膽注入原本便象徵品牌時尚品味基因的全黑和全白色調，同時起用高科技陶瓷的堅硬物料，並作了搭載不同高級複雜機芯的準備，早已注定成為超越時空的時計，在十六年後的今天，除了已經成為最經典的時尚腕錶表表者，更因為其不斷探索製錶難度的野心，而成為最時尚的複雜腕錶王者。</p>
@@ -177,14 +179,23 @@ export default class App extends Component {
             </div>
           </div>
         </section>
-        <section className="cover" id="bg3" style={styleBg3} >
-        </section>
+        <Media query={MOBILE}>
+            {matches => (
+              matches
+                ? <div className="cover_mobile">
+                    <img className="mobile_bg" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/mobilebg5.jpg" alt="藝術的語言" />
+                    <img className="mobile_bg" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/mobilebg6.jpg" alt="藝術的語言" />
+                  </div>
+                : <section className="cover" id="bg3" style={styleBg3} >
+                  </section>
+          )}
+        </Media>
         <section className="page dark">
           <div className="container">
             <div className="content">
               <div className="container relative">
                 <div className="text">
-                  <img className="" src="https://initium-style.s3.amazonaws.com/StylishFeature/20161126/title4.svg" alt="活出自我" />
+                  <img className="" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/title4.svg" alt="活出自我" />
                 </div>
                 <div className="text white">
                   <p>而我覺得J12其中一個很特別的氣質，便是它經典的高科技陶瓷錶款及錶帶演繹，讓光線在光面和啞面打磨之間掩映，叫渾身散發着某種牽引別人的動能，叫大家隨時隨地更積極主動地投入生活，尋找時間裏所蘊藏的魅力，是快是慢是緩是速都不打緊，重要的是，我們不隨波逐流，我們能活出屬於自己的時間、空間和人間。</p>
@@ -194,8 +205,17 @@ export default class App extends Component {
             </div>
           </div>
         </section>
-        <section className="cover" id="bg4" style={styleBg4} >
-        </section>
+        <Media query={MOBILE}>
+            {matches => (
+              matches
+                ? <div className="cover_mobile">
+                    <img className="mobile_bg" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/mobilebg7.jpg" alt="藝術的語言" />
+                    <img className="mobile_bg" src="https://initium-style.s3.amazonaws.com/StylishFeature/20170331/mobilebg8.jpg" alt="藝術的語言" />
+                  </div>
+                : <section className="cover" id="bg4" style={styleBg4} >
+                  </section>
+          )}
+        </Media>
         <section className="page dark">
           <div className="container">
             <div className="content">

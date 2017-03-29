@@ -1,7 +1,7 @@
 {
   "name": "chanel_feature",
   "version": "0.1.0",
-  "homepage": "http://./",
+  "homepage": "./",
   "private": true,
   "devDependencies": {
     "gulp": "^3.9.1",

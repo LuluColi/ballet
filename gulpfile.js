@@ -20,7 +20,7 @@ gulp.task('deploy:staging', () => {
       root: 'build/',
       hostname: 'showcase.initiumlab.com',
       username: 'vagrant',
-      destination: `/home/vagrant/web/chanel_feature_20161121`,
+      destination: `/home/vagrant/web/ballet`,
       incremental: true,
       recursive: true,
       clean: true,

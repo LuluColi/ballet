@@ -1,5 +1,5 @@
 body {
-  background-color: #232323;
+  background-color: #ffffff;
 }
 
 .App {
@@ -9,7 +9,7 @@ body {
 }
 
 a {
-  color: #00ffce;
+  color: #498391;
   letter-spacing: 0.1em;
 }
 
@@ -74,6 +74,14 @@ a.logo {
   background-size: cover;
 }
 
+.cover_mobile{
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
 .page {
   width: 100%;
   display: block;
@@ -106,7 +114,7 @@ a.logo {
 .home-video {
   position: fixed;
   background-size:cover;
-  background-image: url('https://initium-style.s3.amazonaws.com/StylishFeature/20161126/poster.jpg');
+  background-image: url('https://initium-style.s3.amazonaws.com/StylishFeature/20170331/cover.jpg');
   top: 50%;
   left: 50%;
   position: fixed;
@@ -162,7 +170,7 @@ a.logo {
 .text {
   font-size: 1em;
   font-weight: 300;
-  color: #111;
+  color: #5b6066;
   letter-spacing: 0.3em;
   line-height: 1.8;
   margin-bottom: 1em;
@@ -170,15 +178,15 @@ a.logo {
 }
 
 .text img {
-  height: 40px;
+  height: 60px;
 }
 
 .dark {
-  background-color: #232323;
+  background-color: #ffffff;
 }
 
 .white {
-  color: white;
+  color: #5b6066;
 }
 
 .no-margin {
@@ -192,7 +200,9 @@ a.logo {
 .credit span {
   font-weight: bold;
 }
-
+.mobile_bg {
+  max-width: 100%;
+}
 @media only screen and (max-width: 1024px) {
   .page, .cover {
     background-attachment: scroll;

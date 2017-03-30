@@ -160,6 +160,12 @@ a.logo {
   background-color: rgba(255,255,255,0.85);
 }
 
+.transbg1{
+  padding: 10% 25%;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(255,255,255,1);
+}
 .cmobile{
   padding: 10% 15px;
   box-sizing: border-box;

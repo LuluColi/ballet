@@ -110,8 +110,8 @@ export default class App extends Component {
                       </div>
                     </div>
                   </div>
-                :  <div className="page dark" style={styleBg1}>
-                    <div className="container transbg">
+                :  <div className="page dark">
+                    <div className="container transbg1">
                       <div className="content">
                         <div className="container relative">
                           <div className="text white">

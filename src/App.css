@@ -95,19 +95,8 @@ a.logo {
   -o-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
   }
-#fbshare_m img{
-  width: 25px;
-  margin: 10px auto;
-  opacity: 0.3;
-  -webkit-transition: opacity 0.5s ease;
-  -moz-transition: opacity 0.5s ease;
-  -o-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
-}
+
 #fbshare img:hover {
-  opacity: 1;
-}
-#fbshare_m img:hover, #fbshare_m img:active {
   opacity: 1;
 }
 
@@ -141,7 +130,7 @@ a.logo {
   background-position: center center;
   background-size: cover;
   box-sizing: border-box;
-  padding: 140px 0;
+  /*padding: 140px 0;*/
 }
 
 .container {
@@ -150,7 +139,31 @@ a.logo {
   padding-left: 15px;
   padding-right: 15px;
   height: 100%;
+  /*max-width: 800px;*/
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.maintitle{
+  padding-top: 100px;
+}
+
+.footer {
   max-width: 800px;
+  padding: 140px 0;
+}
+
+.transbg {
+  padding: 10% 25%;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(255,255,255,0.85);
+}
+
+.cmobile{
+  padding: 10% 15px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .content {
@@ -231,7 +244,7 @@ a.logo {
 }
 
 .dark {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255);
 }
 
 .white {
@@ -253,7 +266,20 @@ a.logo {
 .mobile_bg {
   max-width: 100%;
 }
+
 @media only screen and (max-width: 1024px) {
+  .maintitle{
+    padding-top: 500px;
+  }
+  .footer {
+    max-width: 800px;
+    padding: 0px 15px;
+  }
+  .cmobile{
+  padding: 5px 15px;
+  box-sizing: border-box;
+  width: 100%;
+  }
   .page, .cover {
     background-attachment: scroll;
   }

@@ -276,7 +276,7 @@ export default class App extends Component {
                   <ul className="credit">
                     <li><span>Text：</span>Jaz Kong</li>
                     <li><span>Photography：</span>Crystal Lee</li>
-                    <li><span>Dancer：</span>Liu Ya Lien</li>
+                    <li><span>Dancer：</span>Liu Ya Lien (student of HKAPA School of Dance)</li>
                     <li><span>Developer：</span>Victoria Jin, Lulu Yang</li>
                     <li><span>Special thanks：</span>The Hong Kong Academy for Performing Arts (HKAPA)</li>
                   </ul>
